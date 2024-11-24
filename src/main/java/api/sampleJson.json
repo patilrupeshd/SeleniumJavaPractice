@@ -1,0 +1,183 @@
+{
+    "store": {
+      "name": "Global E-Commerce Store",
+      "address": {
+        "street": "123 E-commerce Blvd",
+        "city": "Shopville",
+        "state": "CA",
+        "zip": "12345",
+        "country": "USA"
+      },
+      "products": [
+        {
+          "product_id": "P001",
+          "name": "Laptop Pro",
+          "category": "Electronics",
+          "price": 1199.99,
+          "stock": 25,
+          "attributes": {
+            "brand": "TechBrand",
+            "model": "Pro15",
+            "specifications": {
+              "processor": "Intel i7",
+              "ram": "16GB",
+              "storage": "512GB SSD",
+              "display": "15 inch Retina",
+              "warranty_years": 1
+            }
+          },
+          "images": [
+            { "thumbnail": "https://example.com/images/laptop-pro-thumb.jpg" },
+            { "main": "https://example.com/images/laptop-pro.jpg" }
+          ],
+          "tags": ["electronics", "laptop", "technology"],
+          "reviews": [
+            {
+              "customer_id": "C123",
+              "rating": 5,
+              "comment": "Excellent performance!",
+              "review_date": "2024-01-05"
+            },
+            {
+              "customer_id": "C124",
+              "rating": 4,
+              "comment": "Good value for money.",
+              "review_date": "2024-02-12"
+            }
+          ]
+        },
+        {
+          "product_id": "P002",
+          "name": "Wireless Headphones",
+          "category": "Electronics",
+          "price": 199.99,
+          "stock": 100,
+          "attributes": {
+            "brand": "SoundMax",
+            "model": "Wave 3",
+            "specifications": {
+              "battery_life": "20 hours",
+              "bluetooth_version": "5.0",
+              "noise_cancellation": true,
+              "warranty_years": 2
+            }
+          },
+          "images": [
+            { "thumbnail": "https://example.com/images/headphones-thumb.jpg" },
+            { "main": "https://example.com/images/headphones.jpg" }
+          ],
+          "tags": ["electronics", "headphones", "audio"],
+          "reviews": []
+        }
+      ],
+      "customers": [
+        {
+          "customer_id": "C123",
+          "name": "Alice Smith",
+          "email": "alice@example.com",
+          "purchase_history": [
+            {
+              "order_id": "O56789",
+              "order_date": "2024-01-10",
+              "status": "Shipped",
+              "total_amount": 1199.99,
+              "items": [
+                {
+                  "product_id": "P001",
+                  "quantity": 1,
+                  "price": 1199.99
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "customer_id": "C124",
+          "name": "Bob Johnson",
+          "email": "bob@example.com",
+          "purchase_history": [
+            {
+              "order_id": "O56790",
+              "order_date": "2024-02-15",
+              "status": "Delivered",
+              "total_amount": 1399.98,
+              "items": [
+                {
+                  "product_id": "P001",
+                  "quantity": 1,
+                  "price": 1199.99
+                },
+                {
+                  "product_id": "P002",
+                  "quantity": 1,
+                  "price": 199.99
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "orders": [
+        {
+          "order_id": "O56789",
+          "customer_id": "C123",
+          "order_date": "2024-01-10",
+          "status": "Shipped",
+          "shipping_address": {
+            "street": "456 Elm St",
+            "city": "Tech City",
+            "state": "CA",
+            "zip": "54321",
+            "country": "USA"
+          },
+          "payment_method": {
+            "type": "Credit Card",
+            "provider": "Visa",
+            "last_four": "1234"
+          },
+          "total_amount": 1199.99,
+          "items": [
+            {
+              "product_id": "P001",
+              "name": "Laptop Pro",
+              "quantity": 1,
+              "price": 1199.99
+            }
+          ]
+        },
+        {
+          "order_id": "O56790",
+          "customer_id": "C124",
+          "order_date": "2024-02-15",
+          "status": "Delivered",
+          "shipping_address": {
+            "street": "789 Maple Ave",
+            "city": "Shopville",
+            "state": "CA",
+            "zip": "12345",
+            "country": "USA"
+          },
+          "payment_method": {
+            "type": "PayPal",
+            "account": "bob.j@example.com"
+          },
+          "total_amount": 1399.98,
+          "items": [
+            {
+              "product_id": "P001",
+              "name": "Laptop Pro",
+              "quantity": 1,
+              "price": 1199.99
+            },
+            {
+              "product_id": "P002",
+              "name": "Wireless Headphones",
+              "quantity": 1,
+              "price": 199.99
+            }
+          ]
+        }
+      ]
+    }
+  }
+  
